@@ -65,7 +65,7 @@ useEffect(() => { fetchBlogs();}, []);
           {blogs.map((blog) => (
             <Grid item xs={12} sm={6} md={4} key={blog._id}>
               <Card>
-                <CardMedia component="img"height="180"image={blog.img_url} alt={blog.title} />
+                <CardMedia component="img"height="180"image={blog.img_url} alt={blog.title} sx={{objectFit:"contain"}} />
                 <CardContent>
                     <Typography variant="subtitle2" color="textSecondary">
                     {blog.title }
